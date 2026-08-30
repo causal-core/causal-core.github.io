@@ -76,6 +76,8 @@
   .specs { display:flex; flex-direction:column; gap:1px; background:#1B1B1E; border-top:1px solid #1B1B1E; border-bottom:1px solid #1B1B1E; max-width:440px; }
   .specs div { display:flex; justify-content:space-between; gap:16px; background:#0C0C0D; padding:14px 0; font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:.1em; }
   .specs span:first-child { color:#6E6E76; }
+  .specs a { transition:color .25s, border-color .25s; }
+  .specs a:hover { color:#E23A2E; border-color:#E23A2E !important; }
   .store { display:inline-flex; align-items:center; gap:12px; border:1px solid #2A2A2F; border-radius:2px; padding:14px 22px; font-size:13px; letter-spacing:.06em; transition:border-color .25s, background .25s; align-self:start; }
   .store:hover { border-color:#F3F3F4; background:#111113; }
   .store svg { flex:none; }
@@ -146,6 +148,7 @@
           <div><span>PLATFORM</span><span>iOS</span></div>
           <div><span>GENRE</span><span>PHYSICS PUZZLE</span></div>
           <div><span>STATUS</span><span class="red">COMING SOON</span></div>
+          <div><span>LEGAL</span><a href="tumblinshapes-privacy.html" style="border-bottom:1px solid #2A2A2F">PRIVACY POLICY</a></div>
         </div>
         <a class="store" href="#">
           <svg width="15" height="18" viewBox="0 0 16 19" fill="currentColor" aria-hidden="true"><path d="M13.1 10.1c0-2 1.6-3 1.7-3.1-.9-1.4-2.4-1.6-2.9-1.6-1.2-.1-2.4.7-3 .7-.6 0-1.6-.7-2.6-.7-1.3 0-2.6.8-3.3 2-1.4 2.4-.4 6 1 8 .7 1 1.5 2 2.5 2 1 0 1.4-.6 2.6-.6 1.2 0 1.5.6 2.6.6 1 0 1.7-.9 2.4-1.9.8-1.2 1.1-2.3 1.1-2.4-.1 0-2.1-.8-2.1-3zM10.9 3.9c.5-.6.9-1.5.8-2.4-.8 0-1.7.5-2.3 1.2-.5.6-.9 1.5-.8 2.3.9.1 1.8-.4 2.3-1.1z"/></svg>
@@ -183,7 +186,6 @@
       </div>
       <div class="foot-links">
         <a href="mailto:causalcorestudio@gmail.com">CONTACT US</a>
-        <a href="./privacy-policy.html">PRIVACY POLICY</a>
       </div>
     </div>
     <div class="legal">
