@@ -82,6 +82,10 @@
   .store { display:inline-flex; align-items:center; gap:12px; border:1px solid #2A2A2F; border-radius:2px; padding:14px 22px; font-size:13px; letter-spacing:.06em; transition:border-color .25s, background .25s; align-self:start; }
   .store:hover { border-color:#F3F3F4; background:#111113; }
   .store svg { flex:none; }
+  .stores { display:flex; flex-wrap:wrap; gap:12px; }
+  .store.soon { color:#8A8A92; border-style:dashed; cursor:default; }
+  .store.soon:hover { border-color:#2A2A2F; background:none; }
+  .store.soon small { font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:.14em; color:#E23A2E; }
 
   .facts { display:flex; flex-direction:column; gap:1px; background:#17171A; align-self:start; width:100%; }
   .facts div { background:#0A0A0B; padding:22px 0; display:flex; flex-direction:column; gap:8px; }
@@ -151,10 +155,16 @@
           <div><span>STATUS</span><span class="red">AVAILABLE</span></div>
           <div><span>LEGAL</span><a href="tumblinshapes-privacy.html" style="border-bottom:1px solid #2A2A2F">PRIVACY POLICY</a></div>
         </div>
-        <a class="store" href="https://apps.apple.com/app/tumblin-shapes/id6806281058" target="_blank" rel="noopener">
-          <svg width="15" height="18" viewBox="0 0 16 19" fill="currentColor" aria-hidden="true"><path d="M13.1 10.1c0-2 1.6-3 1.7-3.1-.9-1.4-2.4-1.6-2.9-1.6-1.2-.1-2.4.7-3 .7-.6 0-1.6-.7-2.6-.7-1.3 0-2.6.8-3.3 2-1.4 2.4-.4 6 1 8 .7 1 1.5 2 2.5 2 1 0 1.4-.6 2.6-.6 1.2 0 1.5.6 2.6.6 1 0 1.7-.9 2.4-1.9.8-1.2 1.1-2.3 1.1-2.4-.1 0-2.1-.8-2.1-3zM10.9 3.9c.5-.6.9-1.5.8-2.4-.8 0-1.7.5-2.3 1.2-.5.6-.9 1.5-.8 2.3.9.1 1.8-.4 2.3-1.1z"/></svg>
-          <span>Download on the App Store</span>
-        </a>
+        <div class="stores">
+          <a class="store" href="https://apps.apple.com/app/tumblin-shapes/id6806281058" target="_blank" rel="noopener">
+            <svg width="15" height="18" viewBox="0 0 16 19" fill="currentColor" aria-hidden="true"><path d="M13.1 10.1c0-2 1.6-3 1.7-3.1-.9-1.4-2.4-1.6-2.9-1.6-1.2-.1-2.4.7-3 .7-.6 0-1.6-.7-2.6-.7-1.3 0-2.6.8-3.3 2-1.4 2.4-.4 6 1 8 .7 1 1.5 2 2.5 2 1 0 1.4-.6 2.6-.6 1.2 0 1.5.6 2.6.6 1 0 1.7-.9 2.4-1.9.8-1.2 1.1-2.3 1.1-2.4-.1 0-2.1-.8-2.1-3zM10.9 3.9c.5-.6.9-1.5.8-2.4-.8 0-1.7.5-2.3 1.2-.5.6-.9 1.5-.8 2.3.9.1 1.8-.4 2.3-1.1z"/></svg>
+            <span>Download on the App Store</span>
+          </a>
+          <span class="store soon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.6 9.48l1.84-3.18a.38.38 0 0 0-.65-.38l-1.86 3.22a11.4 11.4 0 0 0-9.86 0L5.21 5.92a.38.38 0 0 0-.65.38L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>
+            <span>Android</span><small>COMING SOON</small>
+          </span>
+        </div>
       </div>
     </div>
   </div>
